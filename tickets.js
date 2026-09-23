@@ -2,4 +2,8 @@ function isValidQuantity(quantity) {
   return quantity > 0 && quantity <= 20;
 }
 
-module.exports = { isValidQuantity };
+function calculateTicketPrice(quantity, basePrice) {
+  return Math.floor(quantity * basePrice);
+}
+
+module.exports = { isValidQuantity, calculateTicketPrice };
