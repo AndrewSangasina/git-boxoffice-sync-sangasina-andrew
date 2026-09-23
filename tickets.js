@@ -5,11 +5,12 @@ function isValidQuantity(quantity) {
 function calculateTicketPrice(quantity, basePrice, isPremium) {
   let total = quantity * basePrice;
   if (quantity >= 5) {
-    total = total * 0.9; 
+    total = total * 0.9;
   }
   if (isPremium) {
-    total = total * 1.5; 
-  total = total - 10; 
+    total = total * 1.5;
+  }
+  total = total - 10;
   return Math.round(total);
 }
 
